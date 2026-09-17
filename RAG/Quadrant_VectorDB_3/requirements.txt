@@ -1,0 +1,38 @@
+# Core LangChain
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langchain-text-splitters
+
+# Groq SDK (LangChain internally bhi use karta hai isko)
+groq
+
+# Embeddings (local, free — HuggingFace models)
+sentence-transformers
+langchain-huggingface
+
+# Vector Store (documents store aur search karne ke liye)
+faiss-cpu
+# chromadb   # alternative — agar FAISS ki jagah Chroma use karna ho toh isse uncomment karo
+
+# Document loaders (PDF, DOCX, etc. padhne ke liye)
+pypdf
+python-docx
+unstructured
+
+# Environment variables (.env se API key load karne ke liye)
+python-dotenv
+
+# Numeric operations
+numpy
+
+# Optional but useful — agar web se bhi data scrape/load karna ho
+beautifulsoup4
+requests
+
+langchain-groq
+sentence-transformers
+python-dotenv
+numpy
+ 

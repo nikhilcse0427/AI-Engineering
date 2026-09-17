@@ -1,0 +1,71 @@
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Frontend build output
+dist-ssr/
+*.local
+
+# IDE / Editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Python test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Code Runner / temp editor files
+tempCodeRunnerFile.py
+
+# Bare git clones (not project source)
+*.git/
+
+# Vector DB / local caches (common in RAG projects)
+.chroma/
+chroma_db/
+chroma-db/
+*.sqlite3
+*.db

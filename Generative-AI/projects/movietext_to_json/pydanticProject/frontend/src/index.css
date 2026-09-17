@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Atlassian-style blue brand */
+  --color-brand-50: #deebff;
+  --color-brand-100: #b3d4ff;
+  --color-brand-200: #4c9aff;
+  --color-brand-300: #2684ff;
+  --color-brand-400: #579dff;
+  --color-brand-500: #388bff;
+  --color-brand-600: #1d7afc;
+  --color-brand-700: #0c66e4;
+  --color-brand-800: #0052cc;
+  --color-brand-900: #0747a6;
+  --color-brand-950: #092957;
+
+  --color-marquee-400: #ffc400;
+  --color-marquee-500: #ffab00;
+  --color-marquee-600: #ff991f;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+
+  body {
+    @apply bg-[#151A23] text-[#F7F8F9] font-sans;
+  }
+
+  .dark body,
+  html.dark body {
+    @apply bg-[#151A23] text-[#F7F8F9];
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-400 via-brand-500 to-sky-300 bg-clip-text text-transparent;
+  }
+}

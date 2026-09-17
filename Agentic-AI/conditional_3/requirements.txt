@@ -1,0 +1,10 @@
+langchain
+langchain-groq
+langgraph
+python-dotenv
+langchain-huggingface
+sentence-transformers
+langchain-text-splitters
+langchain-community
+faiss-cpu
+pypdf
